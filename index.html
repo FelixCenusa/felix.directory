@@ -1,0 +1,183 @@
+<!-- views/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>felix.directory</title>
+    <link rel="stylesheet" href="style.css"> <!-- Adjusted path for direct access -->
+</head>
+<body>
+    <div class="terminal">
+        <h1>felix.directory</h1>
+
+        <!-- Websites Folder -->
+        <div class="folder" onclick="toggleFolder('websitesFolder')">
+            <span class="folder-icon">📁</span> Websites
+        </div>
+        <div id="websitesFolder" class="folder-content" style="display: none;">
+            <div class="file" onmouseover="showDescription('felixCenusaDesc')" onmouseout="hideDescription('felixCenusaDesc')">
+                <span class="file-icon">📄</span> 
+                <a href="https://felixcenusa.com" target="_blank">felixcenusa.com</a>
+                <span id="felixCenusaDesc" class="description">This is my live client project.</span>
+            </div>
+            <div class="file" onmouseover="showDescription('felixBestDesc')" onmouseout="hideDescription('felixBestDesc')">
+                <span class="file-icon">📄</span> 
+                <a href="https://felix.best" target="_blank">felix.best</a>
+                <span id="felixBestDesc" class="description">Another project directory website.</span>
+            </div>
+            <div class="file" onmouseover="showDescription('felixDirectoryDesc')" onmouseout="hideDescription('felixDirectoryDesc')">
+                <span class="file-icon">📄</span> 
+                <a href="https://felix.directory" target="_blank">felix.directory</a>
+                <span id="felixDirectoryDesc" class="description">Directory to all my projects and websites.</span>
+            </div>
+        </div>
+
+        <!-- Projects Folder -->
+        <div class="folder" onclick="toggleFolder('projectsFolder')">
+            <span class="folder-icon">📁</span> Projects
+        </div>
+        <div id="projectsFolder" class="folder-content" style="display: none;">
+            <!-- C++ Folder -->
+            <div class="folder" onclick="toggleFolder('cppFolder')">
+                <span class="folder-icon">📁</span> C++
+            </div>
+            <div id="cppFolder" class="folder-content" style="display: none;">
+                <div class="file" onmouseover="showDescription('cppProjectDesc')" onmouseout="hideDescription('cppProjectDesc')">
+                    <span class="file-icon">📄</span> 
+                    <a href="https://github.com/FelixCenusa/Aristotles-Puzzle-Solver" target="_blank">Aristotles Puzzle Solver</a>
+                    <span id="cppProjectDesc" class="description">C++ project to solve a classic puzzle using advanced algorithms.</span>
+                </div>
+                <div class="file" onmouseover="showDescription('cppProjectDesc2')" onmouseout="hideDescription('cppProjectDesc2')">
+                    <span class="file-icon">📄</span> 
+                    <a href="https://github.com/FelixCenusa/CPP-Projects/tree/main/Final-Course-Project" target="_blank">Student Management Client</a>
+                    <span id="cppProjectDesc2" class="description">A OOP C++ program for managing students, grades, and classes efficiently.</span>
+                </div>
+            </div>
+
+            <!-- JS, EJS, HTML, CSS Folder -->
+            <div class="folder" onclick="toggleFolder('jsFolder')">
+                <span class="folder-icon">📁</span> JS, EJS, HTML, CSS
+            </div>
+            <div id="jsFolder" class="folder-content" style="display: none;">
+                <div class="file" onmouseover="showDescription('jsProjectDesc')" onmouseout="hideDescription('jsProjectDesc')">
+                    <span class="file-icon">📄</span> 
+                    <a href="https://felixcenusa.com" target="_blank">TimeToMove</a>
+                    <span id="jsProjectDesc" class="description">Interactive frontend web app designed to help users move</span>
+                </div>
+                <div class="file" onmouseover="showDescription('portfolioWebsiteDesc')" onmouseout="hideDescription('portfolioWebsiteDesc')">
+                    <span class="file-icon">📄</span> 
+                    <a href="https://felix.best/portfolio" target="_blank">Portfolio Website</a>
+                    <span id="portfolioWebsiteDesc" class="description">My personal portfolio website showcasing my work and achievements.</span>
+                </div>
+            </div>
+
+            <!-- Python Folder -->
+            <div class="folder" onclick="toggleFolder('pythonFolder')">
+                <span class="folder-icon">📁</span> Python
+            </div>
+            <div id="pythonFolder" class="folder-content" style="display: none;">
+                <div class="file" onmouseover="showDescription('pythonProjectDesc')" onmouseout="hideDescription('pythonProjectDesc')">
+                    <span class="file-icon">📄</span> 
+                    <a href="https://github.com/FelixCenusa/Python-Projects" target="_blank">All At Once</a>
+                    <span id="pythonProjectDesc" class="description">A collection of Python scripts that perform multiple tasks effectively.</span>
+                </div>
+                <div class="file" onmouseover="showDescription('AOC')" onmouseout="hideDescription('AOC')">
+                    <span class="file-icon">📄</span> 
+                    <a href="https://github.com/FelixCenusa/Advent-Of-Code-2024" target="_blank">Advent Of Code Solutions</a>
+                    <span id="AOC" class="description">Solutions to all problems in 2024</span>
+                </div>
+            </div>
+
+            <!-- Networking Folder -->
+            <div class="folder" onclick="toggleFolder('networkingFolder')">
+                <span class="folder-icon">📁</span> Networking
+            </div>
+            <div id="networkingFolder" class="folder-content" style="display: none;">
+                <div class="file" onmouseover="showDescription('networkingProjectDesc')" onmouseout="hideDescription('networkingProjectDesc')">
+                    <span class="file-icon">📄</span> 
+                    <a href="https://github.com/FelixCenusa/Netowrked-Systems" target="_blank">Networking Project</a>
+                    <span id="networkingProjectDesc" class="description">An exploration of networked systems with practical implementations.</span>
+                </div>
+                <div class="file" onmouseover="showDescription('selfHostingDesc')" onmouseout="hideDescription('selfHostingDesc')">
+                    <span class="file-icon">📄</span> 
+                    <a href="https://felixcenusa.com/statistics" target="_blank">Self Hosting Web Apps</a>
+                    <span id="selfHostingDesc" class="description">My journey of hosting web apps, including detailed statistics.</span>
+                </div>
+            </div>
+
+            <!-- Matlab Folder -->
+            <div class="folder" onclick="toggleFolder('matlabFolder')">
+                <span class="folder-icon">📁</span> Matlab
+            </div>
+            <div id="matlabFolder" class="folder-content" style="display: none;">
+                <div class="file" onmouseover="showDescription('matlabProjectDesc')" onmouseout="hideDescription('matlabProjectDesc')">
+                    <span class="file-icon">📄</span> 
+                    <a href="https://felixcenusa.com/Felix/4DCube">4D cube in 3D space</a>
+                    <span id="matlabProjectDesc" class="description">Matlab simulation to project a 4D cube into 3D space.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CV Folder -->
+        <div class="folder" onclick="toggleFolder('cvFolder')">
+            <span class="folder-icon">📁</span> CV
+        </div>
+        <div id="cvFolder" class="folder-content" style="display: none;">
+            <div class="file" onmouseover="showDescription('liveCvDesc')" onmouseout="hideDescription('liveCvDesc')">
+                <span class="file-icon">📄</span> 
+                <a href="https://felixcenusa.com/Felix/CV_Hosted" target="_blank">Live CV</a>
+                <span id="liveCvDesc" class="description">My constantly updated CV available online for easy access.</span>
+            </div>
+            <div class="file" onmouseover="showDescription('CVWeb')" onmouseout="hideDescription('CVWeb')">
+                <span class="file-icon">📄</span> 
+                <a href="https://felix.best/portfolio/" target="_blank">Portfolio Website</a>
+                <span id="CVWeb" class="description">CV and projects I've done as a website</span>
+            </div>
+        </div>
+
+        <!-- AI Projects -->
+        <div class="folder" onclick="toggleFolder('!aiProjectsFolder')">
+            <span class="folder-icon">📁</span> !AI & Machine Learning
+        </div>
+        <div id="!aiProjectsFolder" class="folder-content" style="display: none;">
+            <div class="file" onmouseover="showDescription('!oneDay')" onmouseout="hideDescription('!oneDay')">
+                <span class="file-icon">📄</span> 
+                <a href="#">Project for future: Pose Estimation using HRNet</a>
+                <span id="!oneDay" class="description">I want to make a Advanced pose estimation using HRNet model, applied to complex datasets.</span>
+            </div>
+            <div class="file" onmouseover="showDescription('!twoDay')" onmouseout="hideDescription('!twoDay')">
+                <span class="file-icon">📄</span> 
+                <a href="#">Project for future: ControlNet for Custom Dataset</a>
+                <span id="!twoDay" class="description">I want to make a Training ControlNet from scratch using my unique custom datasets.</span>
+            </div>
+        </div>
+
+        <div class="folder" onclick="toggleFolder('!mobileAppsFolder')">
+            <span class="folder-icon">📁</span> !Mobile Applications
+        </div>
+        <div id="!mobileAppsFolder" class="folder-content" style="display: none;">
+            <div class="file" onmouseover="showDescription('2fa')" onmouseout="hideDescription('2fa')">
+                <span class="file-icon">📄</span> 
+                <a href="#">Project for future: 2FA app</a>
+                <span id="2fa" class="description">For secure login to my self hosted projects</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleFolder(folderId) {
+            const folder = document.getElementById(folderId);
+            folder.style.display = folder.style.display === "none" ? "block" : "none";
+        }
+
+        function showDescription(descId) {
+            document.getElementById(descId).style.opacity = '1';
+        }
+
+        function hideDescription(descId) {
+            document.getElementById(descId).style.opacity = '0';
+        }
+    </script>
+</body>
+</html>
