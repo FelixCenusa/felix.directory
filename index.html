@@ -117,6 +117,33 @@
                     <span id="matlabProjectDesc" class="description">Matlab simulation to project a 4D cube into 3D space.</span>
                 </div>
             </div>
+            <!-- AI Projects -->
+            <div class="folder" onclick="toggleFolder('!aiProjectsFolder')">
+                <span class="folder-icon">📁</span> !AI & Machine Learning
+            </div>
+            <div id="!aiProjectsFolder" class="folder-content" style="display: none;">
+                <div class="file" onmouseover="showDescription('!oneDay')" onmouseout="hideDescription('!oneDay')">
+                    <span class="file-icon">📄</span> 
+                    <a href="#">Project for future: Pose Estimation using HRNet</a>
+                    <span id="!oneDay" class="description">I want to make a Advanced pose estimation using HRNet model, applied to complex datasets.</span>
+                </div>
+                <div class="file" onmouseover="showDescription('!twoDay')" onmouseout="hideDescription('!twoDay')">
+                    <span class="file-icon">📄</span> 
+                    <a href="#">Project for future: ControlNet for Custom Dataset</a>
+                    <span id="!twoDay" class="description">I want to make a Training ControlNet from scratch using my unique custom datasets.</span>
+                </div>
+            </div>
+            <!-- Mobile Apps -->
+            <div class="folder" onclick="toggleFolder('!mobileAppsFolder')">
+                <span class="folder-icon">📁</span> !Mobile Applications
+            </div>
+            <div id="!mobileAppsFolder" class="folder-content" style="display: none;">
+                <div class="file" onmouseover="showDescription('2fa')" onmouseout="hideDescription('2fa')">
+                    <span class="file-icon">📄</span> 
+                    <a href="#">Project for future: 2FA app</a>
+                    <span id="2fa" class="description">For secure login to my self hosted projects</span>
+                </div>
+            </div>
         </div>
 
         <!-- CV Folder -->
@@ -136,33 +163,7 @@
             </div>
         </div>
 
-        <!-- AI Projects -->
-        <div class="folder" onclick="toggleFolder('!aiProjectsFolder')">
-            <span class="folder-icon">📁</span> !AI & Machine Learning
-        </div>
-        <div id="!aiProjectsFolder" class="folder-content" style="display: none;">
-            <div class="file" onmouseover="showDescription('!oneDay')" onmouseout="hideDescription('!oneDay')">
-                <span class="file-icon">📄</span> 
-                <a href="#">Project for future: Pose Estimation using HRNet</a>
-                <span id="!oneDay" class="description">I want to make a Advanced pose estimation using HRNet model, applied to complex datasets.</span>
-            </div>
-            <div class="file" onmouseover="showDescription('!twoDay')" onmouseout="hideDescription('!twoDay')">
-                <span class="file-icon">📄</span> 
-                <a href="#">Project for future: ControlNet for Custom Dataset</a>
-                <span id="!twoDay" class="description">I want to make a Training ControlNet from scratch using my unique custom datasets.</span>
-            </div>
-        </div>
-
-        <div class="folder" onclick="toggleFolder('!mobileAppsFolder')">
-            <span class="folder-icon">📁</span> !Mobile Applications
-        </div>
-        <div id="!mobileAppsFolder" class="folder-content" style="display: none;">
-            <div class="file" onmouseover="showDescription('2fa')" onmouseout="hideDescription('2fa')">
-                <span class="file-icon">📄</span> 
-                <a href="#">Project for future: 2FA app</a>
-                <span id="2fa" class="description">For secure login to my self hosted projects</span>
-            </div>
-        </div>
+        
     </div>
 
     <script>
